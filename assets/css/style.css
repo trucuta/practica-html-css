@@ -1,0 +1,99 @@
+/* Definicion de colores globales */
+:root {
+	--primary-color: #e05bbe;
+	--secondary-color: #46e0df;
+	--third-color: #fcf3c6;
+	--hover-color: #26807e;
+	--dark: #88206e;
+}
+
+.bg-primary {
+	background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+	background-color: var(--secondary-color) !important;
+}
+.bg-light {
+	background-color: var(--third-color) !important;
+}
+.bg-dark {
+	background-color: var(--dark) !important;
+}
+.bg-hover {
+	background-color: var(--hover-color);
+}
+
+.opacity-50 {
+	opacity: 50%;
+}
+/* menu de navegación */
+@media screen and (min-width: 1000px) {
+	.navbar-toggler {
+		display: none !important;
+	}
+	.collapse:not(.show) {
+		display: flex;
+	}
+	#main-header .navbar .container-fluid {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+	#main-header .navbar-nav {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 100%;
+		justify-content: flex-end;
+		padding-right: 2rem;
+	}
+	#main-header .navbar-nav li:not(:last-child) {
+		margin-right: 1rem;
+	}
+}
+/* menu de navegación */
+
+/* Hero Image Home */
+.card-hero {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	max-height: 82vh;
+	object-fit: cover;
+}
+.card-hero > img {
+	max-height: 82vh;
+	object-fit: cover;
+	object-position: center;
+}
+.card-hero::after {
+	content: "";
+	display: block;
+	background-color: var(--hover-color);
+	opacity: 50%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.card-hero .card-img-overlay {
+	max-width: 450px !important;
+	min-height: 70% !important;
+	left: auto !important;
+	background-color: var(--dark);
+	display: flex;
+	align-items: center;
+	z-index: 3;
+	position: relative;
+}
+
+@media screen and (min-width: 1000px) {
+	.card-hero .card-img-overlay {
+		position: absolute;
+	}
+}
+/* Hero Image Home */
