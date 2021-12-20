@@ -1,12 +1,12 @@
 /* Definicion de colores globales */
 :root {
-	--primary-color: #e05bbe;
-	--secondary-color: #46e0df;
-	--third-color: #fcf3c6;
-	--hover-color: #26807e;
-	--dark: #88206e;
+	--primary-color: #21c8eb;
+	--secondary-color: #4f6ab8;
+	--third-color: #edcbb9;
+	--hover-color: #b8644f;
+	--dark: #112f85;
 }
-
+/* colores de fondos globales */
 .bg-primary {
 	background-color: var(--primary-color) !important;
 }
@@ -23,9 +23,23 @@
 .bg-hover {
 	background-color: var(--hover-color);
 }
+/* colores de texto */
+.text-primary {
+	color: var(--primary-color) !important;
+}
 
 .opacity-50 {
 	opacity: 50%;
+}
+
+.z-index-10 {
+	z-index: 10 !important;
+}
+.rounded {
+	border-radius: 2rem !important;
+}
+.rounded-md {
+	border-radius: 1rem !important;
 }
 /* menu de navegación */
 @media screen and (min-width: 1000px) {
@@ -63,13 +77,16 @@
 	justify-content: end;
 	max-height: 82vh;
 	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .card-hero > img {
 	max-height: 82vh;
 	object-fit: cover;
 	object-position: center;
 }
-.card-hero::after {
+/* .card-hero::after {
 	content: "";
 	display: block;
 	background-color: var(--hover-color);
@@ -78,17 +95,20 @@
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-}
+} */
 
 .card-hero .card-img-overlay {
-	max-width: 450px !important;
-	min-height: 70% !important;
+	width: 100% !important;
 	left: auto !important;
-	background-color: var(--dark);
+	right: auto;
+	background-color: #00000054;
 	display: flex;
 	align-items: center;
 	z-index: 3;
 	position: relative;
+	height: 100%;
+	top: inherit;
+	bottom: inherit;
 }
 
 @media screen and (min-width: 1000px) {
@@ -97,3 +117,42 @@
 	}
 }
 /* Hero Image Home */
+
+/* Preview de mis mascotas - seccion */
+#preview-dogs .figure {
+	width: 100% !important;
+}
+#preview-dogs .figure img {
+	min-width: 100%;
+	height: 400px;
+	object-fit: cover;
+	object-position: top;
+}
+
+.figures {
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 450px;
+	min-height: 450px;
+}
+.figures::after {
+	background-color: #00000077;
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 1rem;
+}
+.image-side {
+	max-width: 450px;
+	min-height: 450px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.videos {
+	height: 300px;
+}

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home - My Pets</title>
+		<title>Home - My Pets Gallery</title>
 
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -18,17 +18,17 @@
 		<!-- Inicio del header de la pagina -->
 		<header id="main-header">
 			<!-- Menu de navegación -->
-			<nav class="navbar navbar-light bg-light py-3">
+			<nav class="navbar navbar-light bg-light py-3 shadow-lg z-index-10">
 				<div class="container-fluid pl-lg-4">
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand" href="/index.html">
 						<img
 							src="./assets/img/pets_icon.svg"
-							alt=""
+							alt="icono de mascota"
 							width="30"
 							height="24"
 							class="d-inline-block align-text-top"
 						/>
-						Ena's Pets
+						My Pets
 					</a>
 
 					<button
@@ -50,19 +50,13 @@
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Features</a>
+								<a class="nav-link" href="/galeria-videos.html">Videos</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Pricing</a>
+								<a class="nav-link" href="/galeria-imagenes.html">Imagenes</a>
 							</li>
 							<li class="nav-item">
-								<a
-									class="nav-link disabled"
-									href="#"
-									tabindex="-1"
-									aria-disabled="true"
-									>Disabled</a
-								>
+								<a class="nav-link" href="/contacto.html">contacto</a>
 							</li>
 						</ul>
 					</div>
@@ -73,19 +67,18 @@
 			<!-- Hero image -->
 			<header class="card card-hero bg-dark text-white rounded-0 border-0">
 				<img
-					src="http://3.16.90.213/assets/lovely-labrador-white.jpg"
+					src="./assets/img/hero.JPG"
 					class="card-img"
 					alt="Imagen principal del inicio de la pagina"
 				/>
-				<div class="card-img-overlay rounded-0 border-0">
-					<div class="contenido">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">
-							This is a wider card with supporting text below as a natural
-							lead-in to additional content. This content is a little bit
-							longer.
+				<div class="card-img-overlay rounded-0 border-0 py-5 px-lg-5">
+					<div class="contenido py-5 text-center w-100 px-lg-5">
+						<h1 class="card-title text-primary">Amores Perros</h1>
+						<p class="card-text lead">
+							Este sitio web muestra las mejores fotografías y videos de dos de
+							<br />
+							las mejores de razas de perros: Terrier y Labrador.
 						</p>
-						<p class="card-text">Last updated 3 mins ago</p>
 					</div>
 				</div>
 			</header>
@@ -93,123 +86,194 @@
 		</header>
 		<!-- Fin del header de la pagina -->
 
-		<!-- Inicio del contenido principal -->
 		<main>
-			<section class="container">
+			<!-- Inicio del contenido principal -->
+			<section class="container" id="preview-dogs">
+				<div class="row">
+					<div class="col-12 text-center pt-5">
+						<h2 class="text-primary">Mis Mascotas</h2>
+					</div>
+				</div>
 				<div
 					class="d-md-flex flex-md-equal justify-content-center w-100 my-md-5"
 				>
-					<div
+					<article
 						class="
-							bg-dark
+							bg-primary
+							rounded
 							me-md-3
 							pt-3
-							px-3
-							pt-md-5
-							px-md-5
+							px-3 px-md-5
 							text-center text-white
 							overflow-hidden
+							col-12 col-md-6
 						"
 					>
 						<div class="my-3 py-3">
-							<h2 class="display-5">Another headline</h2>
-							<p class="lead">And an even wittier subheading.</p>
+							<h2 class="display-5 fw-bold">Boss</h2>
+							<p class="lead">Boss es un perro de raza labrador de 9 años</p>
 						</div>
-						<div
-							class="bg-light shadow-sm mx-auto"
-							style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-						></div>
-					</div>
 
-					<div
+						<figure class="figure">
+							<img
+								src="./assets/img/boss.JPG"
+								class="figure-img img-fluid rounded shadow"
+								alt="imagen de perro labrador"
+							/>
+							<figcaption class="figure-caption text-white">
+								Imagen de perro labrador
+							</figcaption>
+							<a
+								href="./perro-boss.html"
+								class="btn btn-outline-secondary my-4"
+							>
+								Ver más
+							</a>
+						</figure>
+					</article>
+
+					<article
 						class="
 							bg-light
+							rounded
 							me-md-3
 							pt-3
-							px-3
-							pt-md-5
-							px-md-5
+							px-3 px-md-5
 							text-center
 							overflow-hidden
+							col-12 col-md-6
 						"
 					>
 						<div class="my-3 p-3">
-							<h2 class="display-5">Another headline</h2>
-							<p class="lead">And an even wittier subheading.</p>
+							<h2 class="display-5 fw-bold">Gol</h2>
+							<p class="lead">Gol es un perro de raza terrier de 5 años</p>
 						</div>
+						<figure class="figure">
+							<img
+								src="./assets/img/gol.JPG"
+								class="figure-img img-fluid rounded shadow"
+								alt="imagen de perro terrier"
+							/>
+							<figcaption class="figure-caption text-black">
+								Imagen de perro terrier
+							</figcaption>
+							<a href="./perro-gol.html" class="btn btn-outline-secondary my-4">
+								Ver más
+							</a>
+						</figure>
+					</article>
+				</div>
+			</section>
+			<!-- Fin del contenido principal -->
+
+			<section class="py-5" style="background-color: #ecdfd865">
+				<div class="container">
+					<div class="row">
+						<!-- Columna de contenido -->
 						<div
-							class="bg-dark shadow-sm mx-auto"
-							style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-						></div>
+							class="col-md-7 d-flex justify-content-center align-items-center"
+						>
+							<div class="content px-3 px-lg-5">
+								<h2 class="fs-1 fw-bold text-primary">Fotografías</h2>
+								<p class="lead fw-normal">
+									En esta galería encuentras fotografías especiales de cada uno
+									de ellos en donde se pueden disfrutar algunas de sus alegrías
+									y tristezas.
+								</p>
+								<a class="btn btn-secondary px-4" href="/galeria-imagenes.html">
+									Ver más
+								</a>
+							</div>
+						</div>
+						<!-- Fin de columna de contenido -->
+
+						<!-- inicio columna de imagen -->
+						<div class="col-md-5">
+							<figure class="figures rounded-md">
+								<img
+									class="image-side rounded-md shadow"
+									src="./assets/img/fotografias-img.JPG"
+									alt="fotografia de preview"
+								/>
+							</figure>
+						</div>
+						<!-- fin columna de imagen -->
+					</div>
+				</div>
+			</section>
+
+			<section class="py-5" style="background-color: #a4cccc65">
+				<div class="container">
+					<div class="row flex-row-reverse">
+						<!-- Columna de contenido -->
+						<div
+							class="col-md-7 d-flex justify-content-center align-items-center"
+						>
+							<div class="content">
+								<h2 class="fs-1 fw-bold text-primary">Videos</h2>
+								<p class="lead fw-normal">
+									Los videos expresan las realidades de la felicidad que
+									muestran los caninos cuando reciben cariño, protección y
+									cuidados.
+								</p>
+								<a class="btn btn-secondary px-4" href="/galeria-videos.html">
+									Ver más
+								</a>
+							</div>
+						</div>
+						<!-- Fin de columna de contenido -->
+
+						<!-- inicio columna de imagen -->
+						<div class="col-md-5">
+							<figure class="figures rounded-md">
+								<img
+									class="image-side rounded-md shadow"
+									src="./assets/img/videos-img.JPG"
+									alt="galeria de videos"
+								/>
+							</figure>
+						</div>
+
+						<!-- fin columna de imagen -->
 					</div>
 				</div>
 			</section>
 		</main>
-		<!-- Fin del contenido principal -->
 
 		<!-- Inicio del pie de pagina -->
-		<footer class="bg-hover text-white">
-			<div class="container pt-5 pb-3">
-				<div class="row">
-					<div class="col-12 col-md-4">
-						<h5>Acerca de</h5>
-						<p>
-							Este es un sitio creado por Ena Suarez, como parte de las clases
-							prácticas de la maestria en desarrollo web de Unir México
-						</p>
-					</div>
-					<div class="col-12 col-md-4">
-						<h5>Resources</h5>
-						<ul class="list-unstyled text-small">
-							<li>
-								<a class="link-secondary text-white" href="#">Acerca de</a>
-							</li>
-							<li>
-								<a class="link-secondary text-white" href="#">Resource</a>
-							</li>
-							<li>
-								<a class="link-secondary text-white" href="#">Contacto</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-12 col-md-4">
-						<h5>Contactame</h5>
-						<ul class="list-unstyled text-small">
-							<li>
-								<a class="link-secondary" href="#">
-									<img
-										src="./assets/img/icons/facebook.svg"
-										alt="icono de facebook"
-									/>
-								</a>
-							</li>
-							<li>
-								<a class="link-secondary" href="#">
-									<img
-										src="./assets/img/icons/instagram.svg"
-										alt="icono de instagram"
-									/>
-								</a>
-							</li>
-							<li>
-								<a class="link-secondary" href="#">
-									<img
-										src="./assets/img/icons/github.svg"
-										alt="Icono de github"
-									/>
-								</a>
-							</li>
-						</ul>
+		<footer class="bg-light text-center text-lg-start">
+			<div class="container pt-4">
+				<!-- Section: Social media -->
+				<section class="text-center">
+					<!-- Facebook -->
+					<a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!">
+						<img src="./assets/img/icons/facebook.svg" alt="facebook" />
+					</a>
 
-						<form action=""></form>
-					</div>
-					<div class="col-12 pt-5">
-						<small class="d-block mb-3 text-center">
-							©Todos los derechos reservados - Ena Suárez 2021
-						</small>
-					</div>
-				</div>
+					<!-- Instagram -->
+					<a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!">
+						<img src="./assets/img/icons/instagram.svg" alt="instagram" />
+					</a>
+
+					<!-- Linkedin -->
+					<a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!">
+						<img src="./assets/img/icons/linkedin.svg" alt="linkedin" />
+					</a>
+
+					<!-- Github -->
+					<a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!">
+						<img src="./assets/img/icons/github.svg" alt="github" />
+					</a>
+				</section>
+				<!-- Section: Social media -->
 			</div>
+			<!-- Grid container -->
+
+			<!-- Copyright -->
+			<div class="text-center p-3">
+				© 2020 Derechos reservados: <strong>Ena Suárez</strong>
+			</div>
+			<!-- Copyright -->
 		</footer>
 		<!-- fin del pie de pagina -->
 
@@ -217,6 +281,12 @@
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+			integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+			crossorigin="anonymous"
+			async
 		></script>
 	</body>
 </html>
